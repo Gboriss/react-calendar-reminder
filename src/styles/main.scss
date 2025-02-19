@@ -1,0 +1,33 @@
+@import "variables";
+@import "mixins";
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: $bg-color;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+nav {
+  background: $primary-color;
+  color: white;
+  padding: 10px 20px;
+  @include flex-center;
+  justify-content: space-between;
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
